@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Load Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
@@ -9,16 +11,18 @@
     <!-- Sourcing in CSS -->
     <link rel='stylesheet' type="text/css" href="./styles/index.css">
 
+    <!--Sourcing in Pure.css-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
     <!-- Sourcing in Javascript-->
     <script src="https://code.jquery.com/jquery-3.1.0.js"
             integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 
     <!-- Sourcing in fonts -->
-    <!-- display font -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <!-- primary font -->
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Libre+Franklin" rel="stylesheet">
+
     <!-- icon font -->
     <script src="https://use.fontawesome.com/5a919c595e.js"></script>
 
@@ -28,37 +32,58 @@
 <body class="body">
 
 <header class="top-bar">
-    <h1 class="heading__name"><a href="index.html">JJ Keith</a></h1>
-    <ul class="heading__menu menu">
-        <li class="menu__menu-item menu-item">
-            <a href="mailto:jj@jjkeith.net" class="menu-item__link">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
-        <li class="menu__menu-item menu-item">
-            <a href="http://www.linkedin.com/in/jjkeith" target="_blank" class="menu-item__link">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        <li class="menu__menu-item menu-item">
-            <a href="http://github.com/jjkeith" target="_blank" class="menu-item__link">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-square fa-stack-2x"></i>
-                    <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </li>
-    </ul>
+    <h1 class="top-bar__title">Kaitlin
+        <div class="top-bar__dot">dot</div>
+        Today
+    </h1>
+    <h2 class="top-bar__subtitle">All the News That's Fit to Kaitlin</h2>
 </header>
 
 <main>
-    <div class="container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse ipsum magnam nisi obcaecati possimus quae repellendus tempora. Ad aut consequuntur dolorem et ex expedita iusto molestiae nesciunt quibusdam, voluptate.
+    <div class="pure-g">
+        <div class="pure-u-5-24 container container--left">
+            <h4 class="container__subheader">Democracy Dies in Kaitlin</h4>
+            <p>This website could easily be replaced by a few well-deployed push notifications, and yet Kaitlin insists
+                on remaining ignorant, immune to my Mooch jokes and references to Auntie Maxine.</p>
+            <p>But no more! Kaitlin can come here for her daily dose of news (or newsiness)</p>
+            <h4 class="container__subheader">Why Does This Website Look Like It Was Created in 1999?</h4>
+            <p>I was in a hurry because Kaitlin's busting out of town into an infinite abyss of newslessness. Also, it's more 2004, if we're being completely honest.</p>
+            <h4 class="container__subheader">Facts about Kaitlin</h4>
+            <ul class="container__list">
+                <li>
+                    Microwaves fish, but typically in an inoffensive way. Like, usually it's more of "Oh dear, where did
+                    that hot fish come from?" rather than, "WHO THE HELL MICROWAVED FISH?!
+                </li>
+                <li>
+                    Has the culinary tastes of a toddler who has only eaten tofu and creamed corn
+                </li>
+                <li>
+                    May or may not know who Sean Spicer is, even in these post-Spicy days
+                </li>
+                <li>
+                    Such millennial
+                </li>
+                <li>
+                    Does not understand why I would choose the phrasing "Democracy dies in Kaitlin." Like, it just
+                    sounds weird to her and will someone <i>please</i> <a href="https://www.washingtonpost.com"
+                                                                          target="_blank"> explain it to her</a>?
+                </li>
+            </ul>
+            <h4>Who Made This Terrible Website?</h4>
+            <p><a href="https://jjkeith.net">I did.</a> Sorry not sorry.</p>
+        </div>
+        <div class="pure-u-17-24 container">
+            <h4 class="container__subheader">August 8, 2017</h4>
+            <!--TODO Hella javascript moment.js stuff gonna happen-->
+            <ps>
+                North Korea is all, “We can hella nuke you,.” Sensible government officials are like, “Let’s find a way
+                to deescalate.” Trump: “I TRIPLE DOG DARE YA, MOTHAFUCKAS.”
+                <p>
+                    A nation cowers.
+                </p>
+            </p>
+        </div>
+
     </div>
 
 </main>
