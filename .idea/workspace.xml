@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec1e7a6e-7868-48c8-a325-6f020f4fed2b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/494580d6d001d44887d1c6d5800c9dfa15771e2c/index.scssc" afterPath="$PROJECT_DIR$/.sass-cache/494580d6d001d44887d1c6d5800c9dfa15771e2c/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extra-credit.html" afterPath="$PROJECT_DIR$/extra-credit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.css" afterPath="$PROJECT_DIR$/styles/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.css.map" afterPath="$PROJECT_DIR$/styles/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.scss" afterPath="$PROJECT_DIR$/styles/index.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +18,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/styles/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="338">
-                  <caret line="269" column="19" lean-forward="false" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
+                <state relative-caret-position="233">
+                  <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -55,11 +50,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="extra-credit.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="extra-credit.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/extra-credit.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="47" column="15" lean-forward="false" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
+                <state relative-caret-position="815">
+                  <caret line="70" column="154" lean-forward="true" selection-start-line="70" selection-start-column="154" selection-end-line="70" selection-end-column="154" />
                   <folding />
                 </state>
               </provider>
@@ -159,8 +154,8 @@
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/who-why.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/extra-credit.html" />
         <option value="$PROJECT_DIR$/styles/index.scss" />
+        <option value="$PROJECT_DIR$/extra-credit.html" />
       </list>
     </option>
   </component>
@@ -340,7 +335,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60211000" />
+    <option name="totallyTimeSpent" value="60327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="22" width="1680" height="1023" extended-state="0" />
@@ -628,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extra-credit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="47" column="15" lean-forward="false" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/who-why.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -648,8 +635,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="269" column="19" lean-forward="false" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
+        <state relative-caret-position="233">
+          <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra-credit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="70" column="154" lean-forward="true" selection-start-line="70" selection-start-column="154" selection-end-line="70" selection-end-column="154" />
           <folding />
         </state>
       </provider>
