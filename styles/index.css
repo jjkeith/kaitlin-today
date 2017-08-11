@@ -267,6 +267,7 @@
 .container__text {
   font-family: "Fira Sans", sans-serif;
   margin-top: 0;
+  text-align: left;
   white-space: pre-line; }
   .card__text br,
   .container__text br {
