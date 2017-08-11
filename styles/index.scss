@@ -221,6 +221,7 @@ $portrait: "screen and ( orientation: portrait )";
   border-radius: $border-radius;
   margin: 1rem 0.5rem;
   min-height: 70vh;
+  text-align: left;
   @media #{$lg} and ( orientation: landscape ) {
     min-height: 80vh;
   }
@@ -230,6 +231,19 @@ $portrait: "screen and ( orientation: portrait )";
   }
   @media #{$sm} {
     min-height: 0;
+  }
+}
+
+.pure-g > .pure-u-1 {
+  text-align: center;
+  > .container__header {
+    @include m-banner-fonts( 2rem );
+    font-family: $accent-font;
+    -webkit-transform: rotate( -6deg);
+    -moz-transform: rotate( -6deg);
+    -ms-transform: rotate( -6deg);
+    -o-transform: rotate( -6deg);
+    transform: rotate( -6deg);
   }
 }
 
@@ -246,12 +260,13 @@ $portrait: "screen and ( orientation: portrait )";
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
   max-height: 14rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .card__text,
 .container__text {
   font-family: $body-font;
+  margin-top: 0;
   white-space: pre-line;
   br {
     display: block;
@@ -263,6 +278,7 @@ $portrait: "screen and ( orientation: portrait )";
 .card__list,
 .container__list {
   font-family: $body-font;
+  text-align: left;
 }
 
 .list__item {}
@@ -275,4 +291,15 @@ $portrait: "screen and ( orientation: portrait )";
   @media #{$sm} {
     margin: 1rem auto;
   }
+}
+
+.container--add-margin {
+    margin: 1rem;
+}
+
+.card--explainer {}
+
+
+.image--large {
+  max-height: none;
 }

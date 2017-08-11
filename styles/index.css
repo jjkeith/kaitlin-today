@@ -207,7 +207,8 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin: 1rem 0.5rem;
-  min-height: 70vh; }
+  min-height: 70vh;
+  text-align: left; }
   @media screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
     .container__card {
       min-height: 80vh; } }
@@ -217,6 +218,36 @@
   @media screen and (max-width: 667px) {
     .container__card {
       min-height: 0; } }
+
+.pure-g > .pure-u-1 {
+  text-align: center; }
+  .pure-g > .pure-u-1 > .container__header {
+    font-size: 2rem;
+    font-family: "Zilla Slab Highlight", cursive;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg); }
+    @media screen and (min-width: 1280px) {
+      .pure-g > .pure-u-1 > .container__header {
+        font-size: calc( 2rem * 0.9 ); } }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      .pure-g > .pure-u-1 > .container__header {
+        font-size: calc( 2rem * 0.7 ); } }
+    @media screen and (min-width: 668px) and (max-width: 1023px) {
+      .pure-g > .pure-u-1 > .container__header {
+        font-size: calc( 2rem * 0.7 ); } }
+  @media screen and (min-width: 668px) and (max-width: 1023px) and (orientation: landscape) {
+    .pure-g > .pure-u-1 > .container__header {
+      font-size: calc( 2rem * 1 ); } }
+
+    @media screen and (max-width: 667px) {
+      .pure-g > .pure-u-1 > .container__header {
+        font-size: calc( 2rem * 0.7 ); } }
+  @media screen and (max-width: 667px) and (orientation: landscape) {
+    .pure-g > .pure-u-1 > .container__header {
+      font-size: calc( 2rem * 1 ); } }
 
 .card__title,
 .container__subheader {
@@ -230,11 +261,12 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
   max-height: 14rem;
-  margin: 0 auto; }
+  margin: 1rem auto; }
 
 .card__text,
 .container__text {
   font-family: "Fira Sans", sans-serif;
+  margin-top: 0;
   white-space: pre-line; }
   .card__text br,
   .container__text br {
@@ -244,7 +276,8 @@
 
 .card__list,
 .container__list {
-  font-family: "Fira Sans", sans-serif; }
+  font-family: "Fira Sans", sans-serif;
+  text-align: left; }
 
 .image--not-card {
   margin: 1rem; }
@@ -254,5 +287,11 @@
   @media screen and (max-width: 667px) {
     .image--not-card {
       margin: 1rem auto; } }
+
+.container--add-margin {
+  margin: 1rem; }
+
+.image--large {
+  max-height: none; }
 
 /*# sourceMappingURL=index.css.map */
