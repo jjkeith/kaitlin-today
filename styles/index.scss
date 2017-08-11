@@ -9,6 +9,41 @@ $font-color: #111111;
 $accent-color: #ffeb3b;
 $header-background: $accent-color;
 $border-radius: 4px;
+$title-font-size: 5vh;
+
+
+// Media Queries
+
+$sm: "screen and ( max-width: 667px )";
+$md: "screen and ( min-width: 668px ) and ( max-width: 1023px )";
+$lg: "screen and ( min-width: 1024px ) and ( max-width: 1279px )";
+$xl: "screen and ( min-width: 1280px )";
+$landscape: "screen and ( orientation: landscape )";
+$portrait: "screen and ( orientation: portrait )";
+
+
+// Mixins
+@mixin m-banner-fonts( $base ) {
+  font-size: $base;
+  @media #{$xl} {
+    font-size: calc( #{$base} * 0.9 );
+  }
+  @media #{$lg} {
+    font-size: calc( #{$base} * 0.7 );
+  }
+  @media #{$md} {
+    font-size: calc( #{$base} * 0.7 );
+    @media #{$landscape} {
+      font-size: calc( #{$base} * 1 )
+    }
+  }
+  @media #{$sm} {
+    font-size: calc( #{$base} * 0.7 );
+    @media #{$landscape} {
+      font-size: calc( #{$base} * 1 )
+    }
+  }
+}
 
 
 // Styles
@@ -22,46 +57,87 @@ $border-radius: 4px;
   background-color: $header-background;
   color: $font-color;
   padding: 1rem;
-  height: 300px;
+  height: 25vh;
   text-align: center;
   position: relative;
+
+  // Media query color guides
+
+  //@media #{$xl} {
+  //  background-color: red;
+  //}
+  //@media #{$lg} {
+  //  background-color: olive;
+  //}
+  //@media #{$md} {
+  //  background-color: blue;
+  //}
+  //@media #{$sm} {
+  //  background-color: purple;
+  //}
 }
 
-.banner__menu.pure-menu-horizontal {
+.banner__menu {
   position: absolute;
-  top:0;
+  top: 1rem;
   left: 0;
   font-family: $body-font;
-  width: auto;
-  .pure-menu-link {
-    color: $font-color;
-    &:hover {
-      background-color: mix( $header-background, $light-gray, 50% )
-    }
+  list-style: none;
+  margin: 0;
+  @media #{$md} {
+    padding-left: 0.5rem;
+    top: 0.5rem;
+  }
+  @media #{$sm} {
+    padding-left: 0.25rem;
+    top: 0.25rem;
+  }
+}
+
+
+.banner__menu-item {
+  display: inline-block;
+}
+
+.banner__menu-link {
+  @include m-banner-fonts( 2.5vh );
+  color: $font-color;
+  padding: 0.5rem;
+  text-decoration: none;
+  &:hover {
+    background-color: mix( $header-background, $light-gray, 50% )
   }
 }
 
 .banner__title {
+  @include m-banner-fonts( #{$title-font-size} );
   font-family: $accent-font;
-  font-size: 3rem;
-  margin-top: 50px;
+  margin-top: 25px;
   display: inline-block;
+  @media #{$landscape} {
+    @media #{$md} {
+      margin-top: 3vh;
+    }
+    @media #{$md} {}
+      margin-top: 2vh;
+  }
 }
 
 .banner__title--word {
-    margin: 0.5rem 1.25rem;
-    display: inline-block;
-    &:nth-child( 1 ) {
-      transform: rotate( 350deg );
+  margin: 0.5rem 1.25rem;
+  display: inline-block;
+  &:nth-child( 1 ) {
+    transform: rotate( 350deg );
+  }
+  &:nth-child( 2 ) {
+    @include m-banner-fonts( calc( #{$title-font-size} * 0.75 ));
+    font-size: calc( #{$title-font-size} * 0.5 );
+    transform: rotate( 330deg );
+    transition: all 500ms;
+    &:hover {
+      transform: rotate( 390deg );
     }
-    &:nth-child( 2 ) {
-      font-size: 1.5rem;
-      transform: rotate( 330deg );
-      transition: all 500ms;
-      &:hover {
-        transform: rotate( 390deg );
-      }
-    }
+  }
   &:nth-child( 3 ) {
     transform: rotate( 377deg );
   }
@@ -70,6 +146,7 @@ $border-radius: 4px;
 .banner__img {
   position: absolute;
   bottom: 0;
+  max-width: 12.5%;
   &:nth-of-type( 1) {
     left: 1%;
   }
@@ -88,14 +165,31 @@ $border-radius: 4px;
   &:nth-of-type( 6 ) {
     left: 86%;
   }
-  @media screen and ( max-width: 1024px ) {
-    display: none;
+  @if #{md} and #{$landscape} {
+    @for $i from 1 through 3 {
+      &:nth-of-type( #{$i} ) {
+        left: calc( (#{$i} * 8% ) - 4% );
+      }
+    }
+    @for $i from 4 through 6 {
+      &:nth-of-type( #{$i} ) {
+        left: calc( 94% - (( #{$i} - 3 ) * 8% ));
+      }
+    }
+  }
+  @media #{$landscape} {
+    @media #{$md} {
+      max-height: 20vh;
+    }
+    @media #{$sm} {
+      max-height: 19vh;
+    }
   }
 }
 
 .banner__subtitle {
+  @include m-banner-fonts( #{$title-font-size} * 0.75  );
   font-family: $accent-font;
-  font-size: 1.5rem;
   display: block;
   transform: rotate( 3deg );
 }
@@ -104,23 +198,46 @@ $border-radius: 4px;
   max-width: 1200px;
   font-family: $body-font;
   margin-left: unquote(" calc(( 100% - 1200px ) / 2 )");
+  @media screen and ( max-width: 1200px ) {
+    margin: 0 auto;
+  }
+}
+
+.pure-g {
+  height: 100%;
+}
+
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container__card {
   border: 1px solid $font-color;
-  padding: 1rem;
+  padding: 0 1rem;
   -webkit-border-radius: $border-radius;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
-  margin-top: 1rem;
-  margin-right: 1rem
+  margin: 1rem 0.5rem;
+  min-height: 70vh;
+  @media #{$lg} and ( orientation: landscape ) {
+    min-height: 80vh;
+  }
+  @media #{$md} {
+    min-height: 60vh;
+
+  }
+  @media #{$sm} {
+    min-height: 0;
+  }
 }
 
 .card__title,
 .container__subheader {
   font-family: $accent-font;
   font-size: 1.25rem;
-  margin-top: 0;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .card__image,
@@ -128,21 +245,34 @@ $border-radius: 4px;
   -webkit-border-radius: $border-radius;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
-  width: 100%;
+  max-height: 14rem;
+  margin: 0 auto;
 }
 
 .card__text,
 .container__text {
+  font-family: $body-font;
   white-space: pre-line;
+  br {
+    display: block;
+    content: "";
+    margin-top: 0;
+  }
 }
 
-.card__list {
-
+.card__list,
+.container__list {
+  font-family: $body-font;
 }
 
 .list__item {}
 
 .image--not-card {
   margin: 1rem;
-
+  @media #{$md} {
+    margin: 1rem auto;
+  }
+  @media #{$sm} {
+    margin: 1rem auto;
+  }
 }
