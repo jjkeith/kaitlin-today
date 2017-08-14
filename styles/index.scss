@@ -220,7 +220,7 @@ $portrait: "screen and ( orientation: portrait )";
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
   margin: 1rem 0.5rem;
-  min-height: 70vh;
+  min-height: 75vh;
   text-align: left;
   @media #{$lg} and ( orientation: landscape ) {
     min-height: 80vh;

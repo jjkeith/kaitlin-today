@@ -207,7 +207,7 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin: 1rem 0.5rem;
-  min-height: 70vh;
+  min-height: 75vh;
   text-align: left; }
   @media screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
     .container__card {
