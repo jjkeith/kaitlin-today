@@ -1,0 +1,25 @@
+{
+  "name": "kaitlin-today",
+  "version": "1.0.0",
+  "description": "All the news that's fit to Kaitlin",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjkeith/kaitlin-today.git"
+  },
+  "keywords": [
+    "kaitlin",
+    "news",
+    "daily",
+    "updates"
+  ],
+  "author": "JJ Keith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjkeith/kaitlin-today/issues"
+  },
+  "homepage": "https://github.com/jjkeith/kaitlin-today#readme"
+}
