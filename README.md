@@ -5,4 +5,4 @@ A minimalist blog created with the narrow purpose of delivering a digestible qua
 * a form for adding new posts
 * a calendar-based post browser
 * tag sorting
-* masonry/less ridgid layout
+* masonry/less rigid layout
