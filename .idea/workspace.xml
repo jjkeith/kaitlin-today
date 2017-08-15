@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec1e7a6e-7868-48c8-a325-6f020f4fed2b" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/494580d6d001d44887d1c6d5800c9dfa15771e2c/index.scssc" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/angela-merkel.png" />
@@ -760,6 +761,10 @@
 >>>>>>> gh-pages
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/who-why.html" afterPath="$PROJECT_DIR$/who-why.html" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> gh-pages
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -786,7 +791,7 @@
             <entry file="file://$PROJECT_DIR$/js/script.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="330">
-                  <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+                  <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
@@ -795,7 +800,7 @@
           <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-153">
+                <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 >>>>>>> gh-pages
                   <folding />
@@ -814,7 +819,7 @@
                 <state relative-caret-position="-112">
 =======
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="353">
+                <state relative-caret-position="1065">
                   <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
                   <folding>
                     <element signature="e#2669#2676#0" expanded="true" />
@@ -836,7 +841,7 @@
           <file leaf-file-name="who-why.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/who-why.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-89">
+                <state relative-caret-position="255">
                   <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
                   <folding />
                 </state>
@@ -854,7 +859,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="FIRST">
@@ -874,11 +879,19 @@
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+>>>>>>> gh-pages
                   <folding />
                 </state>
               </provider>
@@ -915,6 +928,7 @@
 >>>>>>> gh-pages
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -950,9 +964,28 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope">
         <subPane subId="Project Files">
 =======
+=======
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaitlin-today" type="cbb8eebc:String" user="kaitlin-today" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="kaitlin-today" type="cbb8eebc:String" user="kaitlin-today" />
+              <item name="styles" type="cbb8eebc:String" user="styles" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+>>>>>>> gh-pages
       <pane id="ProjectPane">
         <subPane>
 >>>>>>> gh-pages
@@ -982,22 +1015,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="kaitlin-today" type="cbb8eebc:String" user="kaitlin-today" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="kaitlin-today" type="cbb8eebc:String" user="kaitlin-today" />
-              <item name="styles" type="cbb8eebc:String" user="styles" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1042,15 +1059,23 @@
       <workItem from="1502249436195" duration="36948000" />
       <workItem from="1502499796976" duration="5631000" />
       <workItem from="1502834387300" duration="3026000" />
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
+      <workItem from="1502837777866" duration="17000" />
 >>>>>>> gh-pages
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="784000" />
 =======
     <option name="totallyTimeSpent" value="72651000" />
+>>>>>>> gh-pages
+=======
+    <option name="totallyTimeSpent" value="72668000" />
 >>>>>>> gh-pages
   </component>
   <component name="ToolWindowManager">
@@ -1109,13 +1134,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/faq.html" />
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1476,7 +1494,7 @@
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1500,7 +1518,7 @@
     <entry file="file://$PROJECT_DIR$/styles/index.scss">
 >>>>>>> gh-pages
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1571,7 +1589,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 =======
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
+        <state relative-caret-position="255">
           <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
 >>>>>>> gh-pages
           <folding />
@@ -1581,11 +1599,15 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="165">
           <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
 =======
         <state relative-caret-position="353">
+=======
+        <state relative-caret-position="1065">
+>>>>>>> gh-pages
           <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding>
             <element signature="e#2669#2676#0" expanded="true" />
@@ -1604,6 +1626,14 @@
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
