@@ -11,12 +11,6 @@
     <!-- Sourcing in CSS -->
     <link rel='stylesheet' type="text/css" href="./styles/index.css">
 
-    <!--Sourcing in Pure.css-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-
     <!-- Sourcing in jQuery-->
     <script
             src="http://code.jquery.com/jquery-3.2.1.js"
@@ -39,10 +33,12 @@
 <header class="banner"></header>
 
 <main>
-    <div class="container pure-g">
-        <div class="pure-u-1"><h2 class="container__header">Extra Credit</h2></div>
-        <div class="pure-u-1 pure-u-lg-5-12">
-            <div class="container__card card--explainer">
+    <div class="flex-grid">
+        <div class="col"><h2 class="flex-grid__header">Extra Credit</h2></div>
+    </div>
+    <div class="flex-grid">
+        <div class="col md-1-2">
+            <article class="flex-grid__card card--extra-credit">
                 <img class="card__image pure-img"
                      src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Anthony_Scaramucci_at_SALT_Conference_2016_%28cropped%29.jpg"/>
                 <h4 class="card__title">The Mooch</h4>
@@ -55,10 +51,10 @@
                     <li class="list-item">was fired and replaced by the former Homeland Security Secretary, General Kelly.</li>
                     <li class="list-item">was spoofed to perfection by Mario Cantone who looks eerily like him. (Note: you may know Cantone as "Charlotte's gay friend from <i>Sex and the City</i>," but he is so much more</i>.</li>
                 </ul>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-lg-7-12">
-            <div class="container__card card--explainer">
+        <div class="col md-1-2">
+            <article class="flex-grid__card card--extra-credit">
                 <img class="card__image  image--large  pure-img"
                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Puntan_Dos_Amantes_%28Guam%29_-_DSC01150.JPG/440px-Puntan_Dos_Amantes_%28Guam%29_-_DSC01150.JPG"/>
                 <h4 class="card__title">Why is Kim Jung Un Threatening Guam?</h4>
@@ -70,7 +66,7 @@
                     <li class="list-item">maybe NK's weapons aren't as good as we fear and that's the furthest target they can hit?</li>
                 </ul>
                 <p class="card__text">Also, this is not the time to talk about it, but the way the US treats Guam is messed up. Let's put a pin in it.</p>
-            </div>
+            </article>
         </div>
 
     </div>
