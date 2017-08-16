@@ -1,4 +1,5 @@
 
+
 // Variables
 
 $accent-font: 'Zilla Slab Highlight', cursive;
@@ -14,12 +15,97 @@ $title-font-size: 5vh;
 
 // Media Queries
 
-$sm: "screen and ( max-width: 667px )";
-$md: "screen and ( min-width: 668px ) and ( max-width: 1023px )";
-$lg: "screen and ( min-width: 1024px ) and ( max-width: 1279px )";
+$sm: "screen and ( min-width: 0 )";
+$md: "screen and ( min-width: 668px )";
+$lg: "screen and ( min-width: 1024px )";
 $xl: "screen and ( min-width: 1280px )";
 $landscape: "screen and ( orientation: landscape )";
 $portrait: "screen and ( orientation: portrait )";
+
+
+//**********************/ Custom Minimalist Flexbox Grid /**********************//
+
+// Variables //
+$max-width: 1200px;
+
+// Mixins
+// TODO find a way to dry this out
+// TODO Maybe add offsets
+@mixin class-maker( $breakpoint, $size ) {
+  @media #{$breakpoint} {
+    .col.#{$size}-3-4 {
+      flex: 75%;
+      max-width: 75%;
+    }
+    .col.#{$size}-2-3 {
+      flex: 66%;
+      max-width: 66%;
+    }
+    .col.#{$size}-1-2 {
+      flex: 50%;
+      max-width: 50%;
+    }
+    .col.#{$size}-1-3 {
+      flex: 33%;
+      max-width: 33%;
+    }
+    .col.#{$size}-1-4 {
+      flex: 25%;
+      max-width: 25%;
+    }
+  }
+}
+
+
+// Styles
+.flex-grid {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: wrap;
+  font-family: $body-font;
+  justify-content: space-between;
+  margin-left: unquote(" calc(( 100% - #{$max-width} ) / 2 )");
+  max-width: $max-width;
+
+  @media screen and ( max-width: $max-width ) {
+    margin: 0 auto;
+  }
+}
+//
+//.flex-grid--masonry {
+//  display: -ms-flexbox;
+//  -ms-flex-direction: column;
+//  -ms-flex-wrap: wrap;
+//  display: flex;
+//  flex-direction: column;
+//  flex-wrap: wrap;
+//  height: 100vw;
+//}
+
+//.flex-grid--masonry .col {
+//  max-width: 33%;
+//}
+
+
+.flex-grid .col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  break-inside: avoid;
+  flex: 1;
+  flex-basis: 100%;
+}
+
+.flex-grid > {
+  @include class-maker( $sm, sm );
+  @include class-maker( $md, md );
+  @include class-maker( $lg, lg );
+  @include class-maker( $xl, xl );
+}
+
+//**********************/ End Custom Minimalist Flexbox Grid /**********************//
 
 
 // Mixins
@@ -60,21 +146,20 @@ $portrait: "screen and ( orientation: portrait )";
   height: 25vh;
   text-align: center;
   position: relative;
-
-  // Media query color guides
-
-  //@media #{$xl} {
-  //  background-color: red;
-  //}
-  //@media #{$lg} {
-  //  background-color: olive;
-  //}
-  //@media #{$md} {
-  //  background-color: blue;
-  //}
-  //@media #{$sm} {
-  //  background-color: purple;
-  //}
+   //Media query color guides
+//
+//  @media #{$sm} {
+//    background-color: purple;
+//  }
+//  @media #{$md} {
+//    background-color: blue;
+//  }
+//  @media #{$lg} {
+//    background-color: olive;
+//  }
+//  @media #{$xl} {
+//    background-color: red;
+//  }
 }
 
 .banner__menu {
@@ -84,13 +169,13 @@ $portrait: "screen and ( orientation: portrait )";
   font-family: $body-font;
   list-style: none;
   margin: 0;
-  @media #{$md} {
-    padding-left: 0.5rem;
-    top: 0.5rem;
-  }
   @media #{$sm} {
     padding-left: 0.25rem;
     top: 0.25rem;
+  }
+  @media #{$md} {
+    padding-left: 0.5rem;
+    top: 0.5rem;
   }
 }
 
@@ -110,18 +195,20 @@ $portrait: "screen and ( orientation: portrait )";
 }
 
 .banner__title {
-  @include m-banner-fonts( #{$title-font-size} );
+  @include m-banner-fonts(#{$title-font-size});
   font-family: $accent-font;
   margin-top: 25px;
   display: inline-block;
   @media #{$landscape} {
+    @media #{$sm} {
+      margin-top: 2vh;
+    }
     @media #{$md} {
       margin-top: 3vh;
     }
-    @media #{$md} {}
-      margin-top: 2vh;
   }
 }
+
 
 .banner__title--word {
   margin: 0.5rem 1.25rem;
@@ -178,11 +265,11 @@ $portrait: "screen and ( orientation: portrait )";
     }
   }
   @media #{$landscape} {
-    @media #{$md} {
-      max-height: 20vh;
-    }
     @media #{$sm} {
       max-height: 19vh;
+    }
+    @media #{$md} {
+      max-height: 20vh;
     }
   }
 }
@@ -194,77 +281,48 @@ $portrait: "screen and ( orientation: portrait )";
   transform: rotate( 3deg );
 }
 
-.container {
-  max-width: 1200px;
-  font-family: $body-font;
-  margin-left: unquote(" calc(( 100% - 1200px ) / 2 )");
-  @media screen and ( max-width: 1200px ) {
-    margin: 0 auto;
-  }
-}
-
-.pure-g {
-  height: 100%;
-}
-
-.pure-g > div {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container__card {
+.flex-grid__card {
   border: 1px solid $font-color;
   padding: 0 1rem;
   -webkit-border-radius: $border-radius;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
   margin: 1rem 0.5rem;
-  min-height: 75vh;
   text-align: left;
-  @media #{$lg} and ( orientation: landscape ) {
-    min-height: 80vh;
-  }
-  @media #{$md} {
-    min-height: 60vh;
-
-  }
-  @media #{$sm} {
-    min-height: 0;
-  }
 }
 
-.pure-g > .pure-u-1 {
+.flex-grid__header {
+  @include m-banner-fonts(2rem);
+  font-family: $accent-font;
   text-align: center;
-  > .container__header {
-    @include m-banner-fonts( 2rem );
-    font-family: $accent-font;
-    -webkit-transform: rotate( -6deg);
-    -moz-transform: rotate( -6deg);
-    -ms-transform: rotate( -6deg);
-    -o-transform: rotate( -6deg);
-    transform: rotate( -6deg);
-  }
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  transform: rotate(-6deg);
 }
 
 .card__title,
-.container__subheader {
+.flex-grid__subheader {
   font-family: $accent-font;
   font-size: 1.25rem;
   margin: 0.5rem 0 0.5rem 0;
 }
 
 .card__image,
-.container__image {
+.flex-grid__image {
   -webkit-border-radius: $border-radius;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
-  max-height: 14rem;
+  display:block;
+  max-width:100%;
   margin: 1rem auto;
+  max-height: 14rem;
+  //height:auto; // TODO Reexamine this
 }
 
 .card__text,
-.container__text {
+.flex-grid__text {
   font-family: $body-font;
   margin-top: 0;
   text-align: left;
@@ -277,7 +335,7 @@ $portrait: "screen and ( orientation: portrait )";
 }
 
 .card__list,
-.container__list {
+.flex-grid__list {
   font-family: $body-font;
   text-align: left;
 }
@@ -286,15 +344,15 @@ $portrait: "screen and ( orientation: portrait )";
 
 .image--not-card {
   margin: 1rem;
-  @media #{$md} {
+  @media #{$sm} {
     margin: 1rem auto;
   }
-  @media #{$sm} {
+  @media #{$md} {
     margin: 1rem auto;
   }
 }
 
-.container--add-margin {
+.flex-grid--add-margin {
     margin: 1rem;
 }
 

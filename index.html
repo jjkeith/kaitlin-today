@@ -21,12 +21,6 @@
     <meta name="twitter:image" content="http://www.kaitlin.today/images/donald-trump.png" />
     <meta name="twitter:image:alt" content="Kaitlin Today" />
 
-    <!--Sourcing in Pure.css-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-
     <!-- Sourcing in jQuery-->
     <script
             src="http://code.jquery.com/jquery-3.2.1.js"
@@ -55,13 +49,13 @@
 <header class="banner"></header>
 
 <main>
-    <div class="container pure-g">
-        <div class="pure-u-1"><h2 class="container__header">Daily Log</h2></div>
-
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+    <div class="flex-grid text-center">
+        <div class="col"><h2 class="flex-grid__header">Daily Log</h2></div>
+    </div>
+    <div class="flex-grid flex-grid--masonry">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 15, 2017</h4>
-                <img class="card__image pure-img" src="" alt=""/>
                 <p class="card__text">
                     First Trump condemned the violence in Charlottesville "on many sides" &mdash; spreading the blame among the white supremacists and the counter protesters.
                     <br>
@@ -71,35 +65,34 @@
                     <br>
                     And all of America face-palmed at once.
                 </p>
-            </div>
+            </article>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 14, 2017</h4>
-                <img class="card__image pure-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Kenneth_C._Frazier.jpg/440px-Kenneth_C._Frazier.jpg" alt="Kenneth C. Frazier"/>
+                <img class="card__image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Kenneth_C._Frazier.jpg/440px-Kenneth_C._Frazier.jpg" alt="Kenneth C. Frazier"/>
                 <p class="card__text">
                     Kenneth C. Frazier, CEO of Merck, quit the President's American Manufacturing Council in protest of Trump's "many sides" quote, "America’s leaders must honor our fundamental views by clearly rejecting expressions of hatred, bigotry and group supremacy, which run counter to the American ideal that all people are created equal."
                     <br>
                     Trump, who apparently <i>can</i> issue strong statements about things and people he opposes, tweeted, "Now that Ken Frazier of Merck Pharma has resigned from President's Manufacturing Council, he will have more time to LOWER RIPOFF DRUG PRICES!"
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 13, 2017</h4>
-                <img class="card__image pure-img" src="" alt=""/>
                 <p class="card__text">
                     Trump, rather than do a normal politician thing like condemn the KKK, issued a statement that condemned the “egregious display of hatred, bigotry and violence on many sides.”
                     <br>
                     Heaps of politicians of all persuasions have found a way to more forcefully condemn the violence, but let's be honest: the chewy center of his support are white supremacists, and that he relies on their online vitriol to keep his enemies occupied and a little bit afraid.
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 12, 2017</h4>
-                <img class="card__image pure-img" src="https://img.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2017/08/12/Local/Images/_82A2127.jpg" alt="White Nationalists marching with Tiki torches"/>
+                <img class="card__image" src="https://img.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2017/08/12/Local/Images/_82A2127.jpg" alt="White Nationalists marching with Tiki torches"/>
                 <p class="card__text">
                     Friday night a bunch of dudes in dad khakis, white polos and MAGA hats decided enough was enough and marched through UVA <i>armed with Tiki torches</i>, exhibiting pretty much every single negative stereotype about Americans at once. According to <a href="https://www.washingtonpost.com/local/fights-in-advance-of-saturday-protest-in-charlottesville/2017/08/12/155fb636-7f13-11e7-83c7-5bd5460f0d7e_story.html?hpid=hp_hp-top-table-main_no-name%3Ahomepage%2Fstory&utm_term=.f01d2f1f2253" target="_blank">WaPo</a>, they "chanted 'White lives matter!' 'You will not replace us!' and 'Jews will not replace us!'"
                     <br>
@@ -107,12 +100,12 @@
                     <br>
                     ETA: As you surely know, the planning "gathering" of Nationalist Nazis was dispersed before it could even begin and then a domestic terrorist drove his car into a crowd of anti-Nazis and murdered a woman.
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 11, 2017</h4>
-                <img class="card__image pure-img" src="https://thenypost.files.wordpress.com/2017/06/170622-kim-jong-un-photoshop-02.jpg?quality=90&strip=all&w=1328&h=882&crop=1" alt="Kim Jong Un looking out a window with binoculars"/>
+                <img class="card__image" src="https://thenypost.files.wordpress.com/2017/06/170622-kim-jong-un-photoshop-02.jpg?quality=90&strip=all&w=1328&h=882&crop=1" alt="Kim Jong Un looking out a window with binoculars"/>
                 <p class="card__text">
                     Let's ignore the Pyongyang drama for a day and instead talk about weird things we've learned about Trump and Kim Jung Un.
                     <br>
@@ -120,12 +113,12 @@
                     <br>
                     <b>Dear Leader</b>: He's got a thing about <a href="http://nypost.com/2017/06/22/even-kim-jong-uns-ears-get-photoshopped/" target="_blank">PhotoShopping his ears</a>.
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 10, 2017</h4>
-                <img class="card__image pure-img" src="http://www.atomicarchive.com/Effects/Images/WE12.jpg" alt="mushroom cloud"/>
+                <img class="card__image" src="http://www.atomicarchive.com/Effects/Images/WE12.jpg" alt="mushroom cloud"/>
                 <p class="card__text">
                     Yesterday we learned that Trump's "fire and fury" comments were fo' sure off the cuff and not made in consultation with the State Department or the Pentagon. That was pretty obvious already. <i>Maybe</i> though, some of those "adults in the room" got to him to put his rhetoric in check?
                     <br>
@@ -133,39 +126,38 @@
                     <br>
                     Kim Jung Un says he's thinking about sending some nukes Guam's way, but he's probably just showboating. Right? It's probably going to be alright. Right? Yeah. Maybe? Let's just go with <i class="em em-grimacing"></i>.
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 9, 2017</h4>
-                <img class="card__image pure-img" src="https://img.washingtonpost.com/rf/image_480x320/2010-2019/WashingtonPost/2017/08/09/Interactivity/Images/2016-08-19T150010Z_01_CRA902_RTRIDSP_3_USA-ELECTION-TRUMP.jpg" alt="Paul Manafort"/>
+                <img class="card__image" src="https://img.washingtonpost.com/rf/image_480x320/2010-2019/WashingtonPost/2017/08/09/Interactivity/Images/2016-08-19T150010Z_01_CRA902_RTRIDSP_3_USA-ELECTION-TRUMP.jpg" alt="Paul Manafort"/>
                 <p class="card__text">
                     Paul Manafort is a super un-cool dude with ties not just to Russia, but to Turkey, which is the latest place where Democracy has driven its car off a cliff. <br>
                     Former CIA Director John Brennan said to the House Intelligence Committee, "People on a treasonous path ....don't always realize they're on that path until it's too late." It's hard to know yet if Manafort realized what he was doing or not.
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 8, 2017</h4>
-                <img class="card__image pure-img" src="" alt=""/>
                 <p class="card__text">
                     North Korea is all, “We can hella nuke you.” Sensible government officials are like, “Let’s find a way to deescalate.” Trump: “I TRIPLE DOG DARE YA.”
                     <br>
                     A nation cowers.
                 </p>
-            </div>
+            </article>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-            <div class="container__card card">
+        <div class="col xl-1-4 lg-1-3 md-1-2">
+            <article class="flex-grid__card card">
                 <h4 class="card__title">August 7, 2017</h4>
-                <img class="card__image pure-img" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/160714111055-14-mike-pence-0714-restricted-super-tease.jpg" alt="VP Pence being sworn into office"/>
+                <img class="card__image" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/160714111055-14-mike-pence-0714-restricted-super-tease.jpg" alt="VP Pence being sworn into office"/>
                 <p class="card__text">
                     So, it preeeettty much looks like Pence has plans for a promotion, or so says <a href="https://www.nytimes.com/2017/08/06/us/politics/mike-pence-election-2020.html?_r=0" target="__blank"><i>The New York Times</i></a>. He totally swears that he doesn't have any such plans, but dude is knee-deep in Koch Brothers.
                     <br>
                     Because no one can just talk to Trump, Pence issued a statement directed solely at him saying that it was bogus and he's hella VP4Lyfe.
                 </p>
-            </div>
+            </article>
         </div>
     </div>
 
