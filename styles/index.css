@@ -6,7 +6,6 @@
   -ms-flex-flow: row;
   flex-flow: wrap;
   font-family: "Fira Sans", sans-serif;
-  justify-content: space-between;
   margin-left:  calc(( 100% - 1200px ) / 2 );
   max-width: 1200px; }
   @media screen and (max-width: 1200px) {

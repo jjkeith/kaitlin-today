@@ -66,7 +66,6 @@ $max-width: 1200px;
   -ms-flex-flow: row;
   flex-flow: wrap;
   font-family: $body-font;
-  justify-content: space-between;
   margin-left: unquote(" calc(( 100% - #{$max-width} ) / 2 )");
   max-width: $max-width;
 
