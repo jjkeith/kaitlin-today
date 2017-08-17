@@ -3,8 +3,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row;
   flex-flow: wrap;
+  flex-direction: row;
   font-family: "Fira Sans", sans-serif;
   margin-left:  calc(( 100% - 1200px ) / 2 );
   max-width: 1200px; }
@@ -15,11 +15,10 @@
 .flex-grid .col {
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  break-inside: avoid;
   flex: 1;
   flex-basis: 100%; }
 
-@media screen and (min-width: 0) {
+@media screen and (max-width: 667px) {
   .flex-grid > .col.sm-3-4 {
     flex: 75%;
     max-width: 75%; }
@@ -103,7 +102,7 @@
   font-family: "Fira Sans", sans-serif;
   list-style: none;
   margin: 0; }
-  @media screen and (min-width: 0) {
+  @media screen and (max-width: 667px) {
     .banner__menu {
       padding-left: 0.25rem;
       top: 0.25rem; } }
@@ -133,10 +132,10 @@
     .banner__menu-link {
       font-size: calc( 2.5vh * 1 ); } }
 
-  @media screen and (min-width: 0) {
+  @media screen and (max-width: 667px) {
     .banner__menu-link {
       font-size: calc( 2.5vh * 0.7 ); } }
-  @media screen and (min-width: 0) and (orientation: landscape) {
+  @media screen and (max-width: 667px) and (orientation: landscape) {
     .banner__menu-link {
       font-size: calc( 2.5vh * 1 ); } }
 
@@ -161,14 +160,14 @@
     .banner__title {
       font-size: calc( 5vh * 1 ); } }
 
-  @media screen and (min-width: 0) {
+  @media screen and (max-width: 667px) {
     .banner__title {
       font-size: calc( 5vh * 0.7 ); } }
-  @media screen and (min-width: 0) and (orientation: landscape) {
+  @media screen and (max-width: 667px) and (orientation: landscape) {
     .banner__title {
       font-size: calc( 5vh * 1 ); } }
 
-@media screen and (orientation: landscape) and (min-width: 0) {
+@media screen and (orientation: landscape) and (max-width: 667px) {
   .banner__title {
     margin-top: 2vh; } }
 @media screen and (orientation: landscape) and (min-width: 668px) {
@@ -198,10 +197,10 @@
     .banner__title--word:nth-child(2) {
       font-size: calc( calc( 5vh * 0.75 ) * 1 ); } }
 
-    @media screen and (min-width: 0) {
+    @media screen and (max-width: 667px) {
       .banner__title--word:nth-child(2) {
         font-size: calc( calc( 5vh * 0.75 ) * 0.7 ); } }
-  @media screen and (min-width: 0) and (orientation: landscape) {
+  @media screen and (max-width: 667px) and (orientation: landscape) {
     .banner__title--word:nth-child(2) {
       font-size: calc( calc( 5vh * 0.75 ) * 1 ); } }
 
@@ -238,7 +237,7 @@
     left: calc( 94% - (( 5 - 3 ) * 8% )); }
   .banner__img:nth-of-type(6) {
     left: calc( 94% - (( 6 - 3 ) * 8% )); }
-@media screen and (orientation: landscape) and (min-width: 0) {
+@media screen and (orientation: landscape) and (max-width: 667px) {
   .banner__img {
     max-height: 19vh; } }
 @media screen and (orientation: landscape) and (min-width: 668px) {
@@ -263,21 +262,67 @@
     .banner__subtitle {
       font-size: calc( 5vh * 0.75 * 1 ); } }
 
-  @media screen and (min-width: 0) {
+  @media screen and (max-width: 667px) {
     .banner__subtitle {
       font-size: calc( 5vh * 0.75 * 0.7 ); } }
-  @media screen and (min-width: 0) and (orientation: landscape) {
+  @media screen and (max-width: 667px) and (orientation: landscape) {
     .banner__subtitle {
       font-size: calc( 5vh * 0.75 * 1 ); } }
 
-.flex-grid__card {
+.flex-grid__card-container--flip {
+  perspective: 1000px; }
+  @media screen and (min-width: 1024px) {
+    .flex-grid__card-container--flip:hover .card {
+      transform: rotateY(180deg); } }
+
+.card {
   border: 1px solid #111111;
-  padding: 0 1rem;
+  padding: 0.5rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  margin: 1rem 0.5rem;
-  text-align: left; }
+  margin: 1rem 0.5rem; }
+  @media screen and (min-width: 1024px) {
+    .card {
+      -webkit-transition: all 600ms;
+      -moz-transition: all 600ms;
+      -ms-transition: all 600ms;
+      -o-transition: all 600ms;
+      transition: all 600ms;
+      transform-style: preserve-3d;
+      position: relative;
+      height: calc( 450px - 2rem ); } }
+
+@media screen and (min-width: 1024px) {
+  .flex-grid__card-container--flip,
+  .card__front,
+  .card__back {
+    height: 450px; } }
+
+@media screen and (min-width: 1024px) {
+  .card__front,
+  .card__back {
+    backface-visibility: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc( 100% - 1rem ); } }
+
+@media screen and (min-width: 1024px) {
+  .card__front {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transform: rotateY(0deg);
+    overflow: hidden; } }
+
+@media screen and (min-width: 1024px) {
+  .card__back {
+    padding: 0.5rem;
+    transform: rotateY(180deg); } }
 
 .flex-grid__header {
   font-size: 2rem;
@@ -301,10 +346,10 @@
     .flex-grid__header {
       font-size: calc( 2rem * 1 ); } }
 
-  @media screen and (min-width: 0) {
+  @media screen and (max-width: 667px) {
     .flex-grid__header {
       font-size: calc( 2rem * 0.7 ); } }
-  @media screen and (min-width: 0) and (orientation: landscape) {
+  @media screen and (max-width: 667px) and (orientation: landscape) {
     .flex-grid__header {
       font-size: calc( 2rem * 1 ); } }
 
@@ -312,7 +357,14 @@
 .flex-grid__subheader {
   font-family: "Zilla Slab Highlight", cursive;
   font-size: 1.25rem;
-  margin: 0.5rem 0 0.5rem 0; }
+  margin: 0.5rem 0; }
+
+@media screen and (min-width: 1024px) {
+  .card__title {
+    position: absolute;
+    top: 40%;
+    color: #FFF;
+    font-size: 3.5rem; } }
 
 .card__image,
 .flex-grid__image {
@@ -320,9 +372,14 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
   display: block;
-  max-width: 100%;
-  margin: 1rem auto;
-  max-height: 14rem; }
+  margin: 0 auto;
+  max-height: 12rem;
+  max-width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .card__image,
+    .flex-grid__image {
+      min-width: 100%;
+      min-height: 100%; } }
 
 .card__text,
 .flex-grid__text {
@@ -343,7 +400,7 @@
 
 .image--not-card {
   margin: 1rem; }
-  @media screen and (min-width: 0) {
+  @media screen and (max-width: 667px) {
     .image--not-card {
       margin: 1rem auto; } }
   @media screen and (min-width: 668px) {
