@@ -412,7 +412,14 @@ $max-width: 1200px;
 
 .card--extra-credit {}
 
-
+.card__text--small {
+  @media #{$lg} {
+    font-size: 0.875rem;
+    br {
+      margin-top: 0.5rem;
+    }
+  }
+}
 .image--large {
   max-height: none;
 }

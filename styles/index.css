@@ -410,6 +410,12 @@
 .flex-grid--add-margin {
   margin: 1rem; }
 
+@media screen and (min-width: 1024px) {
+  .card__text--small {
+    font-size: 0.875rem; }
+    .card__text--small br {
+      margin-top: 0.5rem; } }
+
 .image--large {
   max-height: none; }
 
