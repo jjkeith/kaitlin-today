@@ -203,7 +203,7 @@ $max-width: 1200px;
     @include m-banner-fonts( calc( #{$title-font-size} * 0.75 ));
     font-size: calc( #{$title-font-size} * 0.5 );
     transform: rotate( 330deg );
-    transition: all 500ms;
+    transition: transform 500ms;
     &:hover {
       transform: rotate( 390deg );
     }
@@ -276,18 +276,17 @@ $max-width: 1200px;
 }
 
 .card {
-  border: 1px solid $font-color;
   padding: 0.5rem;
   -webkit-border-radius: $border-radius;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
   margin: 1rem 0.5rem;
   @media #{$lg} {
-    -webkit-transition: all 600ms;
-    -moz-transition: all 600ms;
-    -ms-transition: all 600ms;
-    -o-transition: all 600ms;
-    transition: all 600ms;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
     transform-style: preserve-3d;
     position: relative;
     height: calc( 450px - 2rem );
@@ -328,20 +327,26 @@ $max-width: 1200px;
 
 .card__back {
   @media #{$lg} {
+    background-color: $font-color;
+    color: $body-background;
+    height: calc( 100% - 1rem );
     padding: 0.5rem;
     transform: rotateY(180deg);
+    a {
+      color: $header-background;
+    }
   }
 }
 
 .flex-grid__header {
-  @include m-banner-fonts(2rem);
+  @include m-banner-fonts( 2rem );
   font-family: $accent-font;
   text-align: center;
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  -ms-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
-  transform: rotate(-6deg);
+  -webkit-transform: rotate( -4deg );
+  -moz-transform: rotate( -4deg );
+  -ms-transform: rotate( -4deg );
+  -o-transform: rotate( -4deg );
+  transform: rotate( -4deg );
 }
 
 .card__title,
@@ -360,8 +365,7 @@ $max-width: 1200px;
   }
 }
 
-.card__image,
-.flex-grid__image {
+.card__image {
   -webkit-border-radius: $border-radius;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
@@ -369,9 +373,9 @@ $max-width: 1200px;
   margin: 0 auto;
   max-height: 12rem;
   max-width: 100%;
+  overflow: hidden;
   @media #{$lg} {
-    min-width: 100%;
-    min-height: 100%;
+    height: 100%;
   }
 }
 
@@ -388,29 +392,26 @@ $max-width: 1200px;
   }
 }
 
-.card__list,
-.flex-grid__list {
-  font-family: $body-font;
-  text-align: left;
-}
-
-.list__item {}
-
-.image--not-card {
-  margin: 1rem;
+.flex-grid__image {
+  border-radius: $border-radius;
+  max-height: 20rem;
+  width: 100%;
   @media #{$sm} {
-    margin: 1rem auto;
-  }
-  @media #{$md} {
-    margin: 1rem auto;
+    margin: 2rem;
+    max-height: none;
+    width: calc( 100% - 4rem );
   }
 }
+
+
+// Grid modifiers
 
 .flex-grid--add-margin {
     margin: 1rem;
 }
 
-.card--extra-credit {}
+
+// Text modifiers
 
 .card__text--small {
   @media #{$lg} {
@@ -420,6 +421,21 @@ $max-width: 1200px;
     }
   }
 }
-.image--large {
-  max-height: none;
+
+
+// Image modifiers
+
+.card__image--portrait {
+  @media #{$lg} {
+    max-height: none;
+    max-width: 100%;
+    width: 100%
+  }
+}
+
+.card__image--landscape {
+  @media #{$lg} {
+    max-height: 100%;
+    max-width: none;
+  }
 }
