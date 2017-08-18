@@ -281,15 +281,17 @@ $max-width: 1200px;
   -moz-border-radius: $border-radius;
   border-radius: $border-radius;
   margin: 1rem 0.5rem;
+  border: 1px solid $font-color;
   @media #{$lg} {
+    border: none;
+    height: calc( 450px - 2rem );
+    position: relative;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
     transform-style: preserve-3d;
-    position: relative;
-    height: calc( 450px - 2rem );
   }
 }
 
@@ -358,10 +360,10 @@ $max-width: 1200px;
 
 .card__title {
   @media #{$lg} {
-    position: absolute;
-    top: 40%;
     color: $body-background;
     font-size: 3.5rem;
+    position: absolute;
+    top: 40%;
   }
 }
 
@@ -376,6 +378,8 @@ $max-width: 1200px;
   overflow: hidden;
   @media #{$lg} {
     height: 100%;
+    max-height: none;
+    max-width: none;
   }
 }
 
@@ -427,15 +431,12 @@ $max-width: 1200px;
 
 .card__image--portrait {
   @media #{$lg} {
-    max-height: none;
-    max-width: 100%;
-    width: 100%
+    min-width: 100%;
   }
 }
 
 .card__image--landscape {
   @media #{$lg} {
-    max-height: 100%;
-    max-width: none;
+    min-height: 100%;
   }
 }

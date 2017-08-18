@@ -280,17 +280,19 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  margin: 1rem 0.5rem; }
+  margin: 1rem 0.5rem;
+  border: 1px solid #111111; }
   @media screen and (min-width: 1024px) {
     .card {
+      border: none;
+      height: calc( 450px - 2rem );
+      position: relative;
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
       -ms-transition: all 1s;
       -o-transition: all 1s;
       transition: all 1s;
-      transform-style: preserve-3d;
-      position: relative;
-      height: calc( 450px - 2rem ); } }
+      transform-style: preserve-3d; } }
 
 @media screen and (min-width: 1024px) {
   .flex-grid__card-container--flip,
@@ -365,10 +367,10 @@
 
 @media screen and (min-width: 1024px) {
   .card__title {
-    position: absolute;
-    top: 40%;
     color: #FFF;
-    font-size: 3.5rem; } }
+    font-size: 3.5rem;
+    position: absolute;
+    top: 40%; } }
 
 .card__image {
   -webkit-border-radius: 4px;
@@ -381,7 +383,9 @@
   overflow: hidden; }
   @media screen and (min-width: 1024px) {
     .card__image {
-      height: 100%; } }
+      height: 100%;
+      max-height: none;
+      max-width: none; } }
 
 .card__text,
 .flex-grid__text {
@@ -416,13 +420,10 @@
 
 @media screen and (min-width: 1024px) {
   .card__image--portrait {
-    max-height: none;
-    max-width: 100%;
-    width: 100%; } }
+    min-width: 100%; } }
 
 @media screen and (min-width: 1024px) {
   .card__image--landscape {
-    max-height: 100%;
-    max-width: none; } }
+    min-height: 100%; } }
 
 /*# sourceMappingURL=index.css.map */
