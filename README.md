@@ -3,6 +3,7 @@ A minimalist blog created with the narrow purpose of delivering a digestible qua
 
 ### Future Plans
 * addition of angular or other templating framework
+* spruce up medium views -- create a non-flipping card that has image and text side-by-side
 * cleaned up and dry'ed out styles
-* browsing by month
-* fix vendor prefixes
+* load management 
+* add a CSS autoprefixer

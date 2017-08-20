@@ -197,18 +197,26 @@ $max-width: 1200px;
   margin: 0.5rem 1.25rem;
   display: inline-block;
   &:nth-child( 1 ) {
+    -webkit-transform: rotate( 350deg );
+    -ms-transform: rotate( 350deg );
     transform: rotate( 350deg );
   }
   &:nth-child( 2 ) {
     @include m-banner-fonts( calc( #{$title-font-size} * 0.75 ));
     font-size: calc( #{$title-font-size} * 0.5 );
+    -webkit-transform: rotate( 330deg );
+    -ms-transform: rotate( 330deg );
     transform: rotate( 330deg );
     transition: transform 500ms;
     &:hover {
+      -webkit-transform: rotate( 390deg );
+      -ms-transform: rotate( 390deg );
       transform: rotate( 390deg );
     }
   }
   &:nth-child( 3 ) {
+    -webkit-transform: rotate( 377deg );
+    -ms-transform: rotate( 377deg );
     transform: rotate( 377deg );
   }
 }
@@ -261,6 +269,8 @@ $max-width: 1200px;
   @include m-banner-fonts( #{$title-font-size} * 0.75  );
   font-family: $accent-font;
   display: block;
+  -webkit-transform: rotate( 3deg );
+  -ms-transform: rotate( 3deg );
   transform: rotate( 3deg );
 }
 
@@ -269,28 +279,31 @@ $max-width: 1200px;
   @media #{$lg} {
     &:hover {
       .card {
-        transform: rotateY(180deg)
+        -webkit-transform: rotate( 180deg );
+        -ms-transform: rotate( 180deg );
+        transform: rotateY( 180deg );
       }
     }
   }
 }
 
 .card {
-  padding: 0.5rem;
-  -webkit-border-radius: $border-radius;
-  -moz-border-radius: $border-radius;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid $font-color;
   border-radius: $border-radius;
   margin: 1rem 0.5rem;
-  border: 1px solid $font-color;
+  padding: 0.5rem;
   @media #{$lg} {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border: none;
     height: calc( 450px - 2rem );
     position: relative;
     -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 }
@@ -306,9 +319,8 @@ $max-width: 1200px;
 .card__front,
 .card__back {
   @media #{$lg} {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-border-radius: $border-radius;
-    -moz-border-radius: $border-radius;
     border-radius: $border-radius;
     position: absolute;
     top: 0;
@@ -322,6 +334,7 @@ $max-width: 1200px;
     height: 100%;
     width: 100%;
     z-index: 2;
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     overflow: hidden;
   }
@@ -334,6 +347,10 @@ $max-width: 1200px;
     height: calc( 100% - 1rem );
     padding: 0.5rem;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -ms-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
     a {
       color: $header-background;
     }
@@ -363,13 +380,11 @@ $max-width: 1200px;
     color: $body-background;
     font-size: 3.5rem;
     position: absolute;
-    top: 40%;
+    top: 60%;
   }
 }
 
 .card__image {
-  -webkit-border-radius: $border-radius;
-  -moz-border-radius: $border-radius;
   border-radius: $border-radius;
   display:block;
   margin: 0 auto;
