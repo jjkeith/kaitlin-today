@@ -422,10 +422,14 @@ $max-width: 1200px;
 // Text modifiers
 
 .card__text--date {
+  display: none;
   font-style: italic;
   font-weight: 300;
   br {
     border-top: 1px solid $body-background;
+  }
+  @media #{$lg} {
+    display: block;
   }
 }
 
