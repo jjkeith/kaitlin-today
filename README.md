@@ -5,4 +5,4 @@ A minimalist blog created with the narrow purpose of delivering a digestible qua
 * addition of angular or other templating framework
 * cleaned up and dry'ed out styles
 * browsing by month
-* CSS pre-processing (or at least cleaned up vendor prefixes)
+* fix vendor prefixes

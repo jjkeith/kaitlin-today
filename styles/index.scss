@@ -386,6 +386,7 @@ $max-width: 1200px;
 .card__text,
 .flex-grid__text {
   font-family: $body-font;
+  font-weight: 300;
   margin-top: 0;
   text-align: left;
   white-space: pre-line;
@@ -393,6 +394,9 @@ $max-width: 1200px;
     display: block;
     content: "";
     margin-top: 0;
+  }
+  @media #{$lg} {
+    font-size: 0.875rem;
   }
 }
 
@@ -417,12 +421,11 @@ $max-width: 1200px;
 
 // Text modifiers
 
-.card__text--small {
-  @media #{$lg} {
-    font-size: 0.875rem;
-    br {
-      margin-top: 0.5rem;
-    }
+.card__text--date {
+  font-style: italic;
+  font-weight: 300;
+  br {
+    border-top: 1px solid $body-background;
   }
 }
 

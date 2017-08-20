@@ -390,6 +390,7 @@
 .card__text,
 .flex-grid__text {
   font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
   margin-top: 0;
   text-align: left;
   white-space: pre-line; }
@@ -398,6 +399,10 @@
     display: block;
     content: "";
     margin-top: 0; }
+  @media screen and (min-width: 1024px) {
+    .card__text,
+    .flex-grid__text {
+      font-size: 0.875rem; } }
 
 .flex-grid__image {
   border-radius: 4px;
@@ -412,11 +417,11 @@
 .flex-grid--add-margin {
   margin: 1rem; }
 
-@media screen and (min-width: 1024px) {
-  .card__text--small {
-    font-size: 0.875rem; }
-    .card__text--small br {
-      margin-top: 0.5rem; } }
+.card__text--date {
+  font-style: italic;
+  font-weight: 300; }
+  .card__text--date br {
+    border-top: 1px solid #FFF; }
 
 @media screen and (min-width: 1024px) {
   .card__image--portrait {
