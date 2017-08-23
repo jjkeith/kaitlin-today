@@ -93,23 +93,23 @@ $max-width: 1200px;
 
 // Mixins
 @mixin m-banner-fonts( $base ) {
-  font-size: $base;
+  font-size: unquote( "#{$base}" );
   @media #{$xl} {
-    font-size: calc( #{$base} * 0.9 );
+    font-size: unquote( "calc( #{$base} * 0.9 )" );
   }
   @media #{$lg} {
-    font-size: calc( #{$base} * 0.7 );
+    font-size: unquote( "calc( #{$base} * 0.7 )" );
   }
   @media #{$md} {
-    font-size: calc( #{$base} * 0.7 );
+    font-size: unquote( "calc( #{$base} * 0.7 )" );
     @media #{$landscape} {
-      font-size: calc( #{$base} * 1 )
+      font-size: unquote( "calc( #{$base} * 1 )" )
     }
   }
   @media #{$sm} {
-    font-size: calc( #{$base} * 0.7 );
+    font-size: unquote( "calc( #{$base} * 0.7 )" );
     @media #{$landscape} {
-      font-size: calc( #{$base} * 1 )
+      font-size: unquote( "calc( #{$base} * 1 )" )
     }
   }
 }
@@ -266,7 +266,7 @@ $max-width: 1200px;
 }
 
 .banner__subtitle {
-  @include m-banner-fonts( #{$title-font-size} * 0.75  );
+  @include m-banner-fonts( calc( #{$title-font-size} * 0.75  ));
   font-family: $accent-font;
   display: block;
   -webkit-transform: rotate( 3deg );

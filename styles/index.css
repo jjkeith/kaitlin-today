@@ -253,7 +253,7 @@
     max-height: 20vh; } }
 
 .banner__subtitle {
-  font-size: 5vh * 0.75;
+  font-size: calc( 5vh * 0.75  );
   font-family: "Zilla Slab Highlight", cursive;
   display: block;
   -webkit-transform: rotate(3deg);
@@ -261,23 +261,23 @@
   transform: rotate(3deg); }
   @media screen and (min-width: 1280px) {
     .banner__subtitle {
-      font-size: calc( 5vh * 0.75 * 0.9 ); } }
+      font-size: calc( calc( 5vh * 0.75  ) * 0.9 ); } }
   @media screen and (min-width: 1024px) {
     .banner__subtitle {
-      font-size: calc( 5vh * 0.75 * 0.7 ); } }
+      font-size: calc( calc( 5vh * 0.75  ) * 0.7 ); } }
   @media screen and (min-width: 668px) {
     .banner__subtitle {
-      font-size: calc( 5vh * 0.75 * 0.7 ); } }
+      font-size: calc( calc( 5vh * 0.75  ) * 0.7 ); } }
   @media screen and (min-width: 668px) and (orientation: landscape) {
     .banner__subtitle {
-      font-size: calc( 5vh * 0.75 * 1 ); } }
+      font-size: calc( calc( 5vh * 0.75  ) * 1 ); } }
 
   @media screen and (max-width: 667px) {
     .banner__subtitle {
-      font-size: calc( 5vh * 0.75 * 0.7 ); } }
+      font-size: calc( calc( 5vh * 0.75  ) * 0.7 ); } }
   @media screen and (max-width: 667px) and (orientation: landscape) {
     .banner__subtitle {
-      font-size: calc( 5vh * 0.75 * 1 ); } }
+      font-size: calc( calc( 5vh * 0.75  ) * 1 ); } }
 
 .flex-grid__card-container--flip {
   perspective: 1000px; }
