@@ -266,7 +266,7 @@ $max-width: 1200px;
 }
 
 .banner__subtitle {
-  @include m-banner-fonts( calc( #{$title-font-size} * 0.75  ));
+  @include m-banner-fonts( calc( #{$title-font-size} * 0.5  ));
   font-family: $accent-font;
   display: block;
   -webkit-transform: rotate( 3deg );
