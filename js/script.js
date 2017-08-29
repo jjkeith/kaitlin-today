@@ -1,13 +1,26 @@
+var decks = [
+  "Life is like a box of racist chocolates",
+  "Maybe something good happened today?",
+  "The Simpsons predicted this in 2000",
+  "At least there is a today!",
+  "The Romans survived Caligula... for a bit",
+  "A minute portion of the news that's fit to print",
+  "Merkel's got this. Right?",
+  "Ignorance is not bliss",
+  "Political stability is overrated"
+];
 
 $( document ).ready( function() {
   $( ".banner" ).load( "./header.html", function() {
-    console.log( 'banner loaded' );
   });
 
 });
 
+function changeDeck() {
+  $( ".banner__subtitle" ).text( decks[ Math.floor ( Math.random(  ) * decks.length )] );
+}
+
 $( window ).on( 'load',function(){
-  console.log( "window loaded ")
   $( ".card__image" ).each( function () {
 
     if ( $( this ).width() / $( this ).height() >= 1 ) {
@@ -17,9 +30,10 @@ $( window ).on( 'load',function(){
     } else {
       $( this ).addClass( 'card__image--portrait' );
     }
-
+    setInterval( changeDeck, 10000 );
   });
 });
+
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
