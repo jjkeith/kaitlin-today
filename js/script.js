@@ -8,7 +8,7 @@ var decks = [
   "The Romans survived Caligula... for a bit",
   "A minute portion of the news that's fit to print",
   "Merkel's got this. Right?",
-  "Ignorance not bliss, but in a dumb way",
+  "Ignorance is bliss, but in a dumb way",
   "Political stability is overrated?"
 ];
 
