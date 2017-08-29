@@ -31,7 +31,7 @@ $max-width: 1200px;
 // Mixins
 // TODO find a way to dry this out
 // TODO Maybe add offsets
-@mixin class-maker( $breakpoint, $size ) {
+@mixin grid-class-maker( $breakpoint, $size ) {
   @media #{$breakpoint} {
     .col.#{$size}-3-4 {
       flex: 75%;
@@ -66,7 +66,7 @@ $max-width: 1200px;
   flex-flow: wrap;
   flex-direction: row;
   font-family: $body-font;
-  margin-left: unquote(" calc(( 100% - #{$max-width} ) / 2 )");
+  margin-left: unquote( "calc(( 100% - #{$max-width} ) / 2 )" );
   max-width: $max-width;
 
   @media screen and ( max-width: $max-width ) {
@@ -82,10 +82,10 @@ $max-width: 1200px;
 }
 
 .flex-grid > {
-  @include class-maker( $sm, sm );
-  @include class-maker( $md, md );
-  @include class-maker( $lg, lg );
-  @include class-maker( $xl, xl );
+  @include grid-class-maker( $sm, sm );
+  @include grid-class-maker( $md, md );
+  @include grid-class-maker( $lg, lg );
+  @include grid-class-maker( $xl, xl );
 }
 
 //**********************/ End Custom Minimalist Flexbox Grid /**********************//
@@ -168,7 +168,7 @@ $max-width: 1200px;
 }
 
 .banner__menu-link {
-  @include m-banner-fonts( 2.5vh );
+  @include m-banner-fonts( calc( #{$title-font-size} * 0.5  ));
   color: $black;
   padding: 0.5rem;
   text-decoration: none;

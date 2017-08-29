@@ -6,7 +6,7 @@
   flex-flow: wrap;
   flex-direction: row;
   font-family: "Fira Sans", sans-serif;
-  margin-left:  calc(( 100% - 1200px ) / 2 );
+  margin-left: calc(( 100% - 1200px ) / 2 );
   max-width: 1200px; }
   @media screen and (max-width: 1200px) {
     .flex-grid {
@@ -115,29 +115,29 @@
   display: inline-block; }
 
 .banner__menu-link {
-  font-size: 2.5vh;
+  font-size: calc( 5vh * 0.5  );
   color: #111111;
   padding: 0.5rem;
   text-decoration: none; }
   @media screen and (min-width: 1280px) {
     .banner__menu-link {
-      font-size: calc( 2.5vh * 0.9 ); } }
+      font-size: calc( calc( 5vh * 0.5  ) * 0.9 ); } }
   @media screen and (min-width: 1024px) {
     .banner__menu-link {
-      font-size: calc( 2.5vh * 0.7 ); } }
+      font-size: calc( calc( 5vh * 0.5  ) * 0.7 ); } }
   @media screen and (min-width: 668px) {
     .banner__menu-link {
-      font-size: calc( 2.5vh * 0.7 ); } }
+      font-size: calc( calc( 5vh * 0.5  ) * 0.7 ); } }
   @media screen and (min-width: 668px) and (orientation: landscape) {
     .banner__menu-link {
-      font-size: calc( 2.5vh * 1 ); } }
+      font-size: calc( calc( 5vh * 0.5  ) * 1 ); } }
 
   @media screen and (max-width: 667px) {
     .banner__menu-link {
-      font-size: calc( 2.5vh * 0.7 ); } }
+      font-size: calc( calc( 5vh * 0.5  ) * 0.7 ); } }
   @media screen and (max-width: 667px) and (orientation: landscape) {
     .banner__menu-link {
-      font-size: calc( 2.5vh * 1 ); } }
+      font-size: calc( calc( 5vh * 0.5  ) * 1 ); } }
 
   .banner__menu-link:hover {
     background-color: #e6dc84; }
