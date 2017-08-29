@@ -1,3 +1,5 @@
+// TODO add fade effect to decks
+
 var decks = [
   "Life is like a box of racist chocolates",
   "Maybe something good happened today?",
@@ -6,13 +8,12 @@ var decks = [
   "The Romans survived Caligula... for a bit",
   "A minute portion of the news that's fit to print",
   "Merkel's got this. Right?",
-  "Ignorance is not bliss",
-  "Political stability is overrated"
+  "Ignorance not bliss, but in a dumb way",
+  "Political stability is overrated?"
 ];
 
 $( document ).ready( function() {
-  $( ".banner" ).load( "./header.html", function() {
-  });
+  $( ".banner" ).load( "./header.html" );
 
 });
 
@@ -30,7 +31,7 @@ $( window ).on( 'load',function(){
     } else {
       $( this ).addClass( 'card__image--portrait' );
     }
-    setInterval( changeDeck, 10000 );
+    setInterval( changeDeck, 15000 );
   });
 });
 
