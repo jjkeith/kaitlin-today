@@ -2,7 +2,7 @@
 
 var decks = [
   "Life is like a box of racist chocolates",
-  "Maybe something good happened today?",
+  "Maybe something good happened?",
   "The Simpsons predicted this in 2000",
   "At least there is a today!",
   "The Romans survived Caligula... for a bit",

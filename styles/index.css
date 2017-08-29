@@ -415,10 +415,10 @@
     display: block;
     content: "";
     margin-top: 0; }
-  @media screen and (min-width: 1024px) {
-    .card__text,
-    .flex-grid__text {
-      font-size: 0.875rem; } }
+
+@media screen and (min-width: 1024px) {
+  .card__text {
+    font-size: 0.875rem; } }
 
 .flex-grid__image {
   border-radius: 4px;

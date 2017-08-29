@@ -411,6 +411,9 @@ $max-width: 1200px;
     content: "";
     margin-top: 0;
   }
+}
+
+.card__text {
   @media #{$lg} {
     font-size: 0.875rem;
   }
