@@ -31,7 +31,7 @@ $( window ).on( 'load',function(){
     } else {
       $( this ).addClass( 'card__image--portrait' );
     }
-    setInterval( changeDeck, 15000 );
+    setInterval( changeDeck, 60000 );
   });
 });
 
